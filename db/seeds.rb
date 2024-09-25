@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+100.times do
+  Article.create(title: Faker::Food.dish, body: Faker::Food.description)
+end
+
+# Add data to the search index.
+Article.reindex
