@@ -14,6 +14,17 @@ class SearchController < ApplicationController
   end
 
   def suggestions
+    @results = search_for_articles
+
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream: turbo_stream.update(
+          "js-search-suggestions",
+          partial: "search/suggestions",
+          locals: { results: @results }
+        )
+      end
+    end
   end
 
   private
