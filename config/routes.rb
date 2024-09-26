@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "articles#index"
 
-  post :search, to: "search#index", as: :search
+  post :search, to: "search#search", as: :search
   post "search/suggestions", to: "search#suggestions", as: :search_suggestions
 
   resources :articles
