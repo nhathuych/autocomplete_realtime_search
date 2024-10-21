@@ -39,7 +39,7 @@ gem "bootsnap", require: false
 gem "searchkick", "~> 5.4"
 gem "elasticsearch", "~> 8.15"
 
-gem "faker", "~> 3.4", ">= 3.4.2"
+gem "faker", "~> 3.5"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
