@@ -37,7 +37,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem "searchkick", "~> 5.4"
-gem "elasticsearch", "~> 8.15"
+gem "elasticsearch", "~> 8.17"
 
 gem "faker", "~> 3.4", ">= 3.4.2"
 
