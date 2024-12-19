@@ -38,4 +38,5 @@
 !/app/assets/builds/.keep
 
 .DS_Store
+vendor/bundle/
 /elasticsearch-data/

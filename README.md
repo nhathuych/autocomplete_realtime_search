@@ -4,3 +4,11 @@
 ```
 bin/dev
 ```
+
+### Or run these for debugging
+```
+rails s
+```
+```
+bin/rails tailwindcss:watch
+```
